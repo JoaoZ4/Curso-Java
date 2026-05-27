@@ -18,3 +18,7 @@ Repository created to store exercises, challenges and projects developed during 
 ## Purpose
 
 Track my progress and consolidate my knowledge in Java development through practical exercises and projects.
+
+## Note
+
+This repository was created while following a Portuguese-language Java course, therefore some source code and comments are written in Portuguese.
