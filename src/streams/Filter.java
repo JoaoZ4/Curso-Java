@@ -25,5 +25,6 @@ public class Filter {
                 .map(saudacaoAprovado)
                 .forEach(System.out::println);
 
+        System.out.println("Teste");
     }
 }
