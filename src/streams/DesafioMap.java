@@ -47,6 +47,5 @@ public class DesafioMap {
                 .map(inverter)
                 .map(binarioParaInt)
                 .forEach(System.out::println);
-
     }
 }
