@@ -21,12 +21,13 @@ public class DesafioMap {
 
         UnaryOperator<String> inverter = texto -> {
             StringBuilder invertida = new StringBuilder();
-            for(int i = texto.length() - 1; i >= 0; i--){
+            for (int i = texto.length() - 1; i >= 0; i--) {
                 invertida.append(texto.charAt(i));
-            } // Dava pra fazer assim: UnaryOperator<String> inverter = s-> new StringBuilder(s).reverse().toString();
+            } // Dava pra fazer assim: UnaryOperator<String> inverter = s-> new
+              // StringBuilder(s).reverse().toString();
             return invertida.toString();
         };
-        
+
         Function<String, Integer> binarioParaInt = n -> Integer.parseInt(n, 2);
 
         System.out.println("Binarios:");
@@ -46,8 +47,6 @@ public class DesafioMap {
                 .map(inverter)
                 .map(binarioParaInt)
                 .forEach(System.out::println);
-
-
 
     }
 }

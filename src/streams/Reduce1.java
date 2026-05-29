@@ -12,8 +12,15 @@ public class Reduce1 {
 
         BinaryOperator<Integer> soma = (ac, n) -> ac + n;
 
-        int total = nums.stream().reduce(soma).get();
+        Integer total1 = nums.stream().reduce(soma).get();
+        System.out.println(total1);
 
-        System.out.println(total);
+        Integer total2 = nums.stream().reduce(100, soma);
+        System.out.println(total2);
+
+        nums.stream()
+                .filter(n -> n > 5)
+                .reduce(soma)
+                .ifPresent(System.out::println);
     }
 }
